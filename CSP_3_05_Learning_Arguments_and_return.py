@@ -18,9 +18,9 @@ def larger(num1,num2):
     else:
         return num2
 
-n1 = input("give me a number")
-n2 = input("give me a number")
-ans=larger(n1,n2)
+# n1 = input("give me a number")
+# n2 = input("give me a number")
+ans=larger(7,12)
 print(ans)
 #Modify the below function such that it asks for the users score as an input.
 #Then based on the score print out a letter grade.
@@ -45,9 +45,9 @@ def grade(g):
     else:
         # print ("F")
         return "d"
-g = int(input("Give me your grade"))
-answer9=grade(g)
-print(answer9)
+# g = int(input("Give me your grade"))
+# answer9=grade(g)
+# print(answer9)
 #Modify the below function such that it asks the user for a number then
 #if the number is divisible by 3 print "fizz"
 #if the number is divisible by 5 print "buzz"
@@ -68,9 +68,9 @@ def fizzBuzz(n):
         return "Buzz"
     else:
         return n
-number1=int(input("Give me an number"))
-answer2=fizzBuzz(number1)
-print(answer2)
+# number1=int(input("Give me an number"))
+# answer2=fizzBuzz(number1)
+# print(answer2)
 #modify the below function such that it asks the user for an input number.
 #if the number is even divide it by two.
 #if the number is odd multiply it by 3 and add 1
@@ -90,9 +90,9 @@ def collatz(n):
 
         return 3*n+1
         # print (3*n+1)
-number3 = int(input("Give me a number"))
-answer3=collatz(number3)
-print(answer3)
+# number3 = int(input("Give me a number"))
+# answer3=collatz(number3)
+# print(answer3)
 
 #Modify the below function such that it asks the user for a temperature.
 #The format for temperature should end in F For Fahrenheit and C for Celcius
@@ -112,6 +112,6 @@ def convertTemperature(input):
         ans=int(out)
         return str(ans)+"C"
         # print(str(int(out))+"C")
-input1 = input("Give me a temperature")
-answer4=convertTemperature(input1)
-print(answer4)
+# input1 = input("Give me a temperature")
+# answer4=convertTemperature(input1)
+# print(answer4)
