@@ -4,16 +4,24 @@
 
 #modify the below function such that it asks the user for 2 numbers as input.
 #Then have it print out the larger number
-def larger():
-    n1 = input("give me a number")
-    n2 = input("give me a number")
-    n1 = int(n1)
-    n2 = int(n2)
-    if( n1 > n2):
-        print (n1)
+def larger(num1,num2):
+    # n1 = input("give me a number")
+    # n2 = input("give me a number")
+    # n1 = int(n1)
+    # n2 = int(n2)
+    # if( n1 > n2):
+    #     print (n1)
+    # else:
+    #     print (n2)
+    if( num1 > num2):
+        return num1
     else:
-        print (n2)
+        return num2
 
+n1 = input("give me a number")
+n2 = input("give me a number")
+ans=larger(n1,n2)
+print(ans)
 #Modify the below function such that it asks for the users score as an input.
 #Then based on the score print out a letter grade.
 # 90+ A
@@ -22,65 +30,88 @@ def larger():
 # 60+ D
 # 59- F
 def grade(g):
-    g = input("Give me your grade")
     if( g>=90):
-        print ("A")
+        # print ("A")
+        return "A"
     elif( g>= 80):
-        print ("B")
+        # print ("B")
+        return "B"
     elif(g >= 70):
-        print ("C")
+        # print ("C")
+        return
     elif(g >= 60):
-        print ("D")
+        # print ("D")
+        return "C"
     else:
-        print ("F")
-
+        # print ("F")
+        return "d"
+g = int(input("Give me your grade"))
+answer9=grade(g)
+print(answer9)
 #Modify the below function such that it asks the user for a number then
 #if the number is divisible by 3 print "fizz"
 #if the number is divisible by 5 print "buzz"
 #if both are the case then print "Fizzbuzz" instead of the prior two
 #if niether are the case print the number.
-def fizzBuzz():
-    n = input("Give me a number")
-    n = int(n)
+def fizzBuzz(n):
     if(n%5==0 and n%3==0):
-        print( "FizzBuzz")
-    elif(n%3==0):
-        print ("fizz")
-    elif(n%5==0):
-        print ("buzz")
-    else:
-        print(n)
 
+        # print( "FizzBuzz")
+        return "FizzBuzz"
+    elif(n%3==0):
+
+        # print ("fizz")
+        return "fizz"
+    elif(n%5==0):
+
+        # print ("buzz")
+        return "Buzz"
+    else:
+        return n
+number1=int(input("Give me an number"))
+answer2=fizzBuzz(number1)
+print(answer2)
 #modify the below function such that it asks the user for an input number.
 #if the number is even divide it by two.
 #if the number is odd multiply it by 3 and add 1
 #then print the new number.
-def collatz():
-    n = input("Give me a number")
-    n = int(n)
+def collatz(n):
+
+    # n = int(n)
     if(n==1):
-        print (n)
+
+        return n
+        # print (n)
     if(n%2==0):
-        print (n/2)
+
+        return n/2
+        # print (n/2)
     else:
-        print (3*n+1)
 
-
-
-
+        return 3*n+1
+        # print (3*n+1)
+number3 = int(input("Give me a number"))
+answer3=collatz(number3)
+print(answer3)
 
 #Modify the below function such that it asks the user for a temperature.
 #The format for temperature should end in F For Fahrenheit and C for Celcius
 #Then given the temperature if it is in Fahrenheit convert it to Celsius on vice versa
 #Example 32F -> 0C  20C -> 68F
 def convertTemperature(input):
-    #input = input("Give me a temperature")
+
     if(input[len(input)-1]=="C"):
         input = int(input[0:len(input)-1])
         out = input*(9/5)+32
-        print (str(int(out))+"F")
+        ans=(int(out))
+        # print (str(int(out))+"F")
+        return str(ans)+"F"
     elif(input[len(input)-1]=="F"):
         input = int(input[0:len(input)-1])
         out = (input-32)*5/9
-        print(str(int(out))+"C")
-
+        ans=int(out)
+        return str(ans)+"C"
+        # print(str(int(out))+"C")
+input1 = input("Give me a temperature")
+answer4=convertTemperature(input1)
+print(answer4)
