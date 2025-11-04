@@ -38,13 +38,13 @@ def grade(g):
         return "B"
     elif(g >= 70):
         # print ("C")
-        return
+        return "C"
     elif(g >= 60):
         # print ("D")
-        return "C"
+        return "D"
     else:
         # print ("F")
-        return "d"
+        return "F"
 # g = int(input("Give me your grade"))
 # answer9=grade(g)
 # print(answer9)
@@ -65,7 +65,7 @@ def fizzBuzz(n):
     elif(n%5==0):
 
         # print ("buzz")
-        return "Buzz"
+        return "buzz"
     else:
         return n
 # number1=int(input("Give me an number"))
